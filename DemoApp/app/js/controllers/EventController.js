@@ -8,6 +8,8 @@ function EventController($scope)
     $scope.boolValue = false;
     $scope.myStyle = {color:'red'};
     $scope.myClass = "blue";
+    $scope.buttonDisabled = false;
+    $scope.sortorder='name';
 
     $scope.event = {
         name: 'Angular Boot Camp',
@@ -23,7 +25,7 @@ function EventController($scope)
             {
                  name : 'Directives Msterclass',
                  createrName: 'Bob Smith',
-                 duration: '1 hr',
+                 duration: 1,
                  level: 'Advanced',
                 abstract: 'In this session you will learn the ins and outs of directives!',
                 upVoteCount:0
@@ -31,7 +33,7 @@ function EventController($scope)
             {
                 name : 'Scopes for fun and profit',
                 createrName: 'John Doe',
-                duration: '30 Min',
+                duration: 2,
                 level: 'Introductory',
                 abstract: 'This session will take a closer look at scopes. Learn what they do, how they do it, and how to get them to do it',
                 upVoteCount:0
@@ -39,7 +41,7 @@ function EventController($scope)
             {
                 name: 'Well Behaved Controllers',
                 createrName: 'Jane Doe',
-                duration: '2 hrs',
+                duration: 4,
                 level: 'Intermediate',
                 abstract: 'Controllers are the beginning of everthing Angular does.  Learn how to craft controllers that will win the respect of your friends and neighbors ',
                 upVoteCount:0
